@@ -8,23 +8,17 @@
 <center>
 <br/>
 <br/>
+  <h1>SEO-рулетка</h1>
 <br/>
+  <h2>Кому достанется проект?</h2>
 <big>
-<script>
-"use strict";
-window.onload = function(){
-let animals = [
-{num:1,name:'волк',descr:'серый зубастый'}, 
-{num:2, name: 'лиса', descr:'рыжая хитрая'}
-];
-let obj = animals[getRandomInt(0,2)];
-let output = obj.num +' '+ obj.name +' '+ obj.descr;
-alert(output); 
-};
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-};
-// Возвращает случайное целое число между min (включительно) и max (не включая max)
-</script>
+<?php
+  $quotes[] = 'Саша';
+    $quotes[] = 'Илья';
+    $quotes[] = 'Николай';
+ srand ((double) microtime() * 1000000);
+    $random_number = rand(0,count($quotes)-1);
+ echo ($quotes[$random_number]);  
+?>
   </big>
 </center>
