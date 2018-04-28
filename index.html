@@ -9,21 +9,13 @@
 <br/>
 <br/>
 <big>
-  <script>
-"use strict";
-window.onload = function(){
-let animals = [
-{num:1,name:'волк'}, 
-{num:2, name: 'лиса'}
-{num:3, name: 'test'}
-];
-let obj = animals[getRandomInt(0,2)];
-let output = obj.num +' '+ obj.name;
-alert(output); 
-};
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-};
+<script>
+onload = function ()
+    {
+    var animals = ['заяц', 'медведь', 'лиса'];
+    animals.sort (function (x, y) {return (Math.random () > .5)});
+    for ( var sps = document.querySelectorAll ('p > span'), j = 0, le = sps.length; j < le; j++) sps [j].innerHTML = animals [j];
+    }
 </script>
   </big>
 </center>
