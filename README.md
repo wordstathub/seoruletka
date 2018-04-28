@@ -1,1 +1,0 @@
-# seoruletka.github.io
